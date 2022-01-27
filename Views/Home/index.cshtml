@@ -4,10 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Portfolio</title>
 </head>
 <body>
-    <h1>Hello ASP.NET MVC!</h1>
+    
+    <header>
+        <a href="/">Home</a> | <a href="/projects">Projects</a> | <a href="/contact">Contact</a>
+    </header>
+    <main>
+        <div>
+            <img src="images/Portrait.jpg" alt="self portrait">
+            <h2>Daniel Soots</h2>
+            <p>Learning C# web development</p>
+        </div>
+        <div>
+            <h2>About Daniel</h2>
+            <p>This is some more stuff you should know about me...  maybe..</p>
+        </div>
+
+    </main>
+    <footer>
+        <div class="dateTime">
+            @{
+                DateTime CurrentTime = DateTime.Now;
+            }
+            <h3>@CurrentTime.ToString("dddd, dd, MMMM yyyy")</h3>
+        </div>
+    </footer>
+    
+    
+    @* <h1>Hello ASP.NET MVC!</h1>
     @{
         var StringList = new List<string>{
             "one",
@@ -31,6 +58,6 @@
                     }
                 </div>
             }
-    }
+    } *@
 </body>
 </html>

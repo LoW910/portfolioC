@@ -4,9 +4,10 @@ namespace Portfolio.Controllers
 {
     public class ContactController : Controller
     {
-        [HttpGet("contact")]
-        public string Index(){
-            return "This is my contact controller route '/contact' !";
+        [HttpGet("contact")] // get req for /contact
+
+        public ViewResult Index(){
+            return View();
         }
     }
 }
