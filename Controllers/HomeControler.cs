@@ -7,9 +7,13 @@ namespace Portfolio.Controllers
         // routes this HomeController will handle
         [HttpGet("")] // get req for /
 
-        public string Index(){
-            return "This is my Index route '/'";
+        public ViewResult Index(){
+            return View();
         }
+
+        // public string Index(){
+        //     return "This is my Index route '/'";
+        // }
 
         
     }
